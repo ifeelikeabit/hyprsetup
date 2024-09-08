@@ -12,14 +12,13 @@ sound="pipewire pipewire-alsa pipewire-pulse pipewire-jack  wireplumber pavucont
 qtsupport="qt5-wayland qt6-wayland"
 auth="polkit-kde-agent"
 mediacontrol="playerctl brightnessctl"
-wallpaper="waypaper swww"
 terminal="kitty"
 font="ttf-font-awesome"
 filemanager="dolphin ranger"
 editor="neovim"
 #EXTRA 
-AUR=""
-additional=""
+AUR="waypaper"
+additional="swww firefox" 
 
 
 
