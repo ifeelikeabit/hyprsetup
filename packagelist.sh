@@ -16,16 +16,10 @@ wallpaper="waypaper swww"
 terminal="kitty"
 font="ttf-font-awesome"
 filemanager="dolphin ranger"
-
+editor="neovim"
 #EXTRA 
-AUR="paru"
-additional=" firefox neovim steam gamemode"
-installparu="sudo pacman -S --needed base-devel 
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si"
-installyay="echo i use paru btw"
-
+AUR=""
+additional=""
 
 
 

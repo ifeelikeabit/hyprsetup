@@ -2,21 +2,18 @@
 
 source ./packagelist.sh
 
-echo "Nightmare is beginning, give me your password"
-sudo pacman -Sy --noconfirm  $compositor $statusbar $applauncher $screenshot $copypaste $notification $sound $qtsupport  $auth $mediacontrol  $wallpaper $terminal $font $filemanager
-if [ -n "$installparu"]; then
-  $installparu
-fi
 
-if [ -n "$installyay"]; then
-  $installyay
-fi
+echo "Nightmare is beginning, give me your password"
+sudo pacman -Sy --noconfirm  $compositor $statusbar $applauncher $screenshot $copypaste $notification $sound $qtsupport  $auth $mediacontrol  $wallpaper $terminal $font $filemanager $editor
 
 
 if [ -n "$additional" ]; then
-   $AUR -Sy $additional 
+  sudo pacman -Sy --noconfirm $additional 
 fi
 
+if [ -n "$AUR" ]; then
+  paru -Sy --noconfirm $AUR
+fi
 
 if [ -e "cfg" ]; then  
 cp -rv ./cfg/hypr $HOME/.config/
@@ -26,6 +23,10 @@ cp -rv ./cfg/waybar $HOME/.config/
 else
     echo "Config file not found, skipping."
 fi
+
+
+
+
 
 echo "Welcome to Hyprland... "
 echo "Just type 'Hyprland' to get started."
