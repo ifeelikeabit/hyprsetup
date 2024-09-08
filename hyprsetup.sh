@@ -3,8 +3,7 @@
 source ./packagelist.sh
 
 echo "Nightmare is beginning, give me your password"
-sudo pacman -Sy --noconfirm  $compositor $statusbar $applauncher $screenshot $copypaste $notification $sound $qtsupport  $auth $mediacontrol  $wallpaper $terminal $font
-
+sudo pacman -Sy --noconfirm  $compositor $statusbar $applauncher $screenshot $copypaste $notification $sound $qtsupport  $auth $mediacontrol  $wallpaper $terminal $font $filemanager
 if [ -n "$installparu"]; then
   $installparu
 fi

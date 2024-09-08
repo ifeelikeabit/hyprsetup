@@ -2,7 +2,7 @@
 # 
 # Necessary for hyprland insstallation.
 # Change packages as you wish
-compositor="hyprland"
+compositor="hyprland xdg-desktop-portal-hyprland"
 statusbar="waybar"
 applauncher="rofi-wayland"
 screenshot="grim slurp"
@@ -15,6 +15,7 @@ mediacontrol="playerctl brightnessctl"
 wallpaper="waypaper swww"
 terminal="kitty"
 font="ttf-font-awesome"
+filemanager="dolphin ranger"
 
 #EXTRA 
 AUR="paru"
