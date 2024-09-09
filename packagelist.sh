@@ -20,6 +20,12 @@ editor="neovim"
 AUR="waypaper"
 additional="swww firefox" 
 
+###
+setparu="sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si"
+###
 
 
 
