@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source ./packagelist.sh
-$setparu
+eval "$setparu"
 
 echo -e "\033[4;34mNightmare is beginning\033[0m"
 sudo pacman -Sy --noconfirm  $compositor $statusbar $applauncher $screenshot $copypaste $notification $sound $qtsupport  $auth $mediacontrol  $wallpaper $terminal $font $filemanager $editor
