@@ -16,6 +16,7 @@ terminal="kitty"
 font="ttf-font-awesome"
 filemanager="dolphin ranger"
 editor="neovim"
+media= "imv mpv"
 #EXTRA 
 AUR="waypaper"
 additional="swww firefox" 
