@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source ./packagelist.sh
-pwd = $loc 
+loc=$(pwd)
 
 cd $HOME
 eval "$setparu"
@@ -20,7 +20,7 @@ fi
 
 
 
-if [ -e "$location/cfg" ]; then  
+if [ -e "$loc/cfg" ]; then  
 cp -rv $loc/cfg/hypr $HOME/.config/
 cp -rv $loc/cfg/nvim $HOME/.config/
 cp -rv $loc/cfg/rofi $HOME/.config/
