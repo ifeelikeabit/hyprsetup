@@ -17,6 +17,8 @@ font="ttf-font-awesome"
 filemanager="dolphin ranger"
 editor="neovim"
 media= "imv mpv"
+usb="udiskie"
+fzf="fzf"
 #EXTRA 
 AUR="waypaper"
 additional="swww firefox" 
