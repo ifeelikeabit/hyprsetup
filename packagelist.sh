@@ -17,8 +17,7 @@ font="ttf-font-awesome"
 filemanager="dolphin ranger"
 editor="neovim"
 media= "imv mpv"
-usb="udiskie"
-fzf="fzf"
+blutooth="bluez blueman"
 #EXTRA 
 AUR="waypaper"
 additional="swww firefox" 
@@ -29,7 +28,6 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si"
 ###
-
 
 
 
