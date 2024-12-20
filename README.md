@@ -29,4 +29,8 @@ Then run the `hyprsetup.sh` script to apply the setup.(If you add own cfg files 
 
 **IMPORTANT**: These script files were created for my personal setup. If you know what you're doing, you can use them safely.
 
+
+![Setup Image](https://github.com/ifeelikeabit/hyprsetup/raw/main/images/setup.png)
+
+
 - **Email:** aktasesat80@gmail.com
