@@ -2,7 +2,10 @@
 
 **What is this?**
 
-After installing Arch Linux, I edit the `packagelist.sh` and run the `hyprsetup.sh` script. I plan to add a more user-friendly and robust structure soon, but for now, it works fine for me and anyone with a similar setup.
+After installing Arch Linux, instead of installing components one by one, you can quickly set up your system by defining them in the `packagelist.sh`, where you can prepare and organize everything in advance. Put in your cfg files or use my files.
+Then run the `hyprsetup.sh` script to apply the setup.(If you add own cfg files please take a look at hyprsetup.sh before execute )
+ 
+ **NOTE:** I plan to add a more user-friendly and robust structure soon, but for now, it works fine for me and anyone with a similar setup.
 
 **USAGE**
 
