@@ -17,7 +17,7 @@ Then run the `hyprsetup.sh` script to apply the setup.(If you add own cfg files 
 
 2. **Add your configuration files or use mine. Then, edit the `packagelist.sh` file to match your setup:**
     ```bash
-    npm install
+    #If you add own cfg files put there your subfolders 
     ```
 
 3. **Make the `hyprsetup.sh` script executable and run it:**
