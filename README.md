@@ -17,7 +17,8 @@ Then run the `hyprsetup.sh` script to apply the setup.(If you add own cfg files 
 
 2. **Add your configuration files or use mine. Then, edit the `packagelist.sh` file to match your setup:**
     ```bash
-    #If you add own cfg files put there your subfolders 
+    #If you add own cfg files , add your subfolders name  into hyprsetup.sh like this
+    cp -rv $loc/cfg/YOURFOLDERNAME $HOME/.config/
     ```
 
 3. **Make the `hyprsetup.sh` script executable and run it:**
