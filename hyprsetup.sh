@@ -19,7 +19,7 @@ if [ -n "$AUR" ]; then
 fi
 
 
-
+#If you add own cfg files put there your subfolders. 
 if [ -e "$loc/cfg" ]; then  
 cp -rv $loc/cfg/hypr $HOME/.config/
 cp -rv $loc/cfg/nvim $HOME/.config/
