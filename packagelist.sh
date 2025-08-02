@@ -13,14 +13,14 @@ qtsupport="qt5-wayland qt6-wayland"
 auth="polkit-kde-agent"
 mediacontrol="playerctl brightnessctl"
 terminal="kitty"
-font="ttf-font-awesome"
+font="otf-font-awesome ttf-hack-nerd ttf-iosevka-nerd"
 filemanager="dolphin ranger"
 editor="neovim"
 media="imv mpv"
 bluetooth="bluez blueman"
 
 # EXTRA 
-AUR="waypaper"
+AUR="waypaper nvim-packer-git"
 additional="swww firefox"
 
 # OPTIONAL (for eval)
