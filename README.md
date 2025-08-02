@@ -31,7 +31,6 @@ Then run the `hyprsetup.sh` script to apply the setup.(If you add own cfg files 
 
 ![Desktop](https://github.com/ifeelikeabit/hyprsetup/raw/master/desktop.jpg)
 
-![Setup Image](https://github.com/ifeelikeabit/hyprsetup/raw/master/os.jpg)
 
 
 - **Email:** aktasesat80@gmail.com
