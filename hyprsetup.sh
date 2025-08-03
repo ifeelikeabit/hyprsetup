@@ -22,6 +22,8 @@ install_packages "File managers" $filemanager
 install_packages "Editor" $editor
 install_packages "Media players" $media
 install_packages "Bluetooth" $bluetooth
+install_packages "Disk Utils" $diskutils
+install_packages "Developer Tools" $developertools
 install_paru
 if [ -n "$additional" ]; then
   install_packages "Additional packages" $additional

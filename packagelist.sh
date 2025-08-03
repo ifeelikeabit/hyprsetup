@@ -18,6 +18,9 @@ filemanager="dolphin ranger"
 editor="neovim"
 media="imv mpv"
 bluetooth="bluez blueman"
+diskutils="udiskie timeshift"
+developertools="clang gdb"
+
 
 # EXTRA 
 AUR="waypaper nvim-packer-git"
