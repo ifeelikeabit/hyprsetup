@@ -7,6 +7,9 @@ source_path="$(dirname "$(realpath "$0")")/cfg"
 target_path="$HOME/.config"
 
 
+items=(hypr nvim rofi waybar kitty starship.toml)
+items2=(.zshrc .oh-my-zsh)
+
 
 GREEN='\033[0;32m' 
 BLUE="\033[0;34m" 

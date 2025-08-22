@@ -37,13 +37,9 @@ fi
 
 print 1 "Starting config copy..."
 
-config_items=(hypr nvim rofi waybar kitty)
-config_items2=(.zshrc .oh-my-zsh)
 
-copycfg $source_path $target_path "${config_items[@]}"
-
-
-copycfg $source_path $HOME "${config_items2[@]}"
+copycfg $source_path $target_path "${items[@]}"
+copycfg $source_path $HOME "${items2[@]}"
 
 print 1 "Welcome to Hyprland... "
 print 1 "Just type 'Hyprland' to get started."

@@ -15,16 +15,33 @@ Then run the `hyprsetup.sh` script to apply the setup.(If you add own cfg files 
     cd hyprsetup
     ```
 
-2. **Add your configuration files or use mine. Then, edit the `packagelist.sh` file to match your setup:**
-    ```bash
-    #If you add own cfg files , add your subfolders name  into hyprsetup.sh like this
-    cp -rv $loc/cfg/YOURFOLDERNAME $HOME/.config/
-    ```
 
-3. **Make the `hyprsetup.sh` script executable and run it:**
+2. **How to add your configuration files:**  
+1. Copy your configuration files and directories into `hyprsetup/cfg`, or set the path to your config folder in the `source_path` variable in the `env` file.  
+2. Add your folder or file names into the `items` variable.  
+3. In the `hyprsetup.sh` file, call the function as follows:  
+
+```bash
+copycfg $source_path $target_path "${items[@]}"
+# You can copy any other config files or folders to different locations using this method.
+```
+3. **Add your packages into packagelist:**
+
+
+
+4. **Make the `hyprsetup.sh` script executable and run it:**
     ```bash
     chmod +x hyprsetup.sh
     ./hyprsetup.sh
+    ```
+
+5. **Functions:**
+```bash
+install_packages "group_name" $variable
+install_aur_packages $variable
+copycfg $source_path $target_path "${items[@]}"
+print 0 "message"  #first variable is color. -1-red 0-none 1-green 2-yellow 3-blue.
+
     ```
 
 **IMPORTANT**: These script files were created for my personal setup. If you know what you're doing, you can use them safely.
