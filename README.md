@@ -17,17 +17,21 @@ Then run the `hyprsetup.sh` script to apply the setup.(If you add own cfg files 
 
 
 2. **How to add your configuration files:**  
-1. Copy your configuration files and directories into `hyprsetup/cfg`, or set the path to your config folder in the `source_path` variable in the `env` file.  
-2. Add your folder or file names into the `items` variable.  
-3. In the `hyprsetup.sh` file, call the function as follows:  
-
+  - Copy your configuration files and directories into `hyprsetup/cfg`, or set the path to your config folder in the `source_path` variable in the `env` file.  
+  - Add your folder or file names into the `items` variable.  
+  - In the `hyprsetup.sh` file, call the function as follows:  
 ```bash
 copycfg $source_path $target_path "${items[@]}"
 # You can copy any other config files or folders to different locations using this method.
 ```
-3. **Add your packages into packagelist:**
-
-
+3. **Add your packages into packagelist like this:**
+```bash
+#Just example
+compositor="hyprland swww xdg-desktop-portal-hyprland"
+statusbar="waybar"
+applauncher="rofi-wayland"
+screenshot="grim slurp"
+```
 
 4. **Make the `hyprsetup.sh` script executable and run it:**
     ```bash
@@ -41,8 +45,7 @@ install_packages "group_name" $variable
 install_aur_packages $variable
 copycfg $source_path $target_path "${items[@]}"
 print 0 "message"  #first variable is color. -1-red 0-none 1-green 2-yellow 3-blue.
-
-    ```
+```
 
 **IMPORTANT**: These script files were created for my personal setup. If you know what you're doing, you can use them safely.
 
