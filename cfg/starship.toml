@@ -1,0 +1,75 @@
+# ~/.config/starship.toml
+
+add_newline = false
+command_timeout = 1000
+format = """$directory$git_branch$git_status"""
+
+# Drop ugly default prompt characters
+[character]
+success_symbol = ''
+error_symbol = ''
+
+# ---
+
+[os]
+format = '[$symbol](bold white) '   
+disabled = false
+
+[os.symbols]
+Arch = '󰣇'
+
+
+# Shows current directory
+[directory]
+truncation_length = 1
+truncation_symbol = '…/'
+home_symbol = ' ~'
+read_only_style = '197'
+read_only = '  '
+format = '[$path]($style)[$read_only]($read_only_style) '
+
+# Shows current git branch
+[git_branch]
+format = '[$branch]($style)'
+# truncation_length = 4
+truncation_symbol = '…/'
+style = 'bold green'
+
+# Shows current git status
+[git_status]
+format = '([ \( $all_status$ahead_behind\)]($style) )'
+style = 'bold green'
+conflicted = '[ confliced=${count}](red) '
+up_to_date = '[󰘽](green) ' #up-to-date
+untracked = '[󰋗 (${count})](red) '
+ahead = ' ahead=${count}'
+diverged = ' ahead=${ahead_count}  behind=${behind_count}'
+behind = ' behind=${count}'
+stashed = '[ stashed=${count}](green) '
+modified = '[󰛿 modified=${count}](yellow) '
+staged = '[󰐗 staged=${count}](green) '
+renamed = '[󱍸 renamed=${count}](yellow) '
+deleted = '[󰍶 deleted=${count}](red) '
+
+# ---
+
+[vagrant]
+disabled = true
+
+[docker_context]
+disabled = true
+
+[helm]
+disabled = true
+
+[python]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[ruby]
+disabled = true
+
+[terraform]
+disabled = true

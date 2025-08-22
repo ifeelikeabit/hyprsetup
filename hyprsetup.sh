@@ -1,7 +1,8 @@
 !/bin/bash
-
+source ./env
 source ./packagelist.sh
-loc=$(pwd)
+source ./functions.sh
+
 
 
 echo -e "\033[1;33mStarting package installation...\033[0m"
@@ -24,6 +25,7 @@ install_packages "Media players" $media
 install_packages "Bluetooth" $bluetooth
 install_packages "Disk Utils" $diskutils
 install_packages "Developer Tools" $developertools
+install_packages "Shell" $shell
 install_paru
 if [ -n "$additional" ]; then
   install_packages "Additional packages" $additional
@@ -33,25 +35,15 @@ if [ -n "$AUR" ]; then
   install_aur_packages $AUR
 fi
 
-#If you add own cfg files put there your subfolders. 
-config_dirs=(hypr nvim rofi waybar kitty)
+print 1 "Starting config copy..."
 
-for dir in "${config_dirs[@]}"; do
-  if [ -d "$loc/cfg/$dir" ]; then
-    echo -e "\033[0;34mCopying $dir config..."
-    cp -rfv "$loc/cfg/$dir" "$HOME/.config/"
-  else
-    echo -e "\033[0;33m$dir config not found, skipping."
-  fi
-done
+config_items=(hypr nvim rofi waybar kitty)
+config_items2=(.zshrc .oh-my-zsh)
+
+copycfg $source_path $target_path "${config_items[@]}"
 
 
+copycfg $source_path $HOME "${config_items2[@]}"
 
-
-echo -e "\033[0;32mWelcome to Hyprland... "
-echo -e "\033[0;33mJust type 'Hyprland' to get started."
-
-
-
-
-
+print 1 "Welcome to Hyprland... "
+print 1 "Just type 'Hyprland' to get started."

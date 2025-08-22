@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#default: hyprsetup/cfg
+source_path="$(dirname "$(realpath "$0")")/cfg"
+
+#you can change your own config location
+target_path="$HOME/.config"
+
+
+
+GREEN='\033[0;32m' 
+BLUE="\033[0;34m" 
+YELLOW="\033[0;33m" 
+RED='\033[0;31m'  
+RESET="\033[0m" #no color
+
+
+
+
+
